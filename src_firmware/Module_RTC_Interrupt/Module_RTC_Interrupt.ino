@@ -13,13 +13,6 @@
  *
  ***************************************************************************************/
 
-/* Note: change register adresses in RTClib.cpp
- *  #define DS1307_CONTROL          0x0E
- *  #define RTC_DS1307__RS0         0x03
- *  #define RTC_DS1307__RS1         0x04
- *  #define RTC_DS1307__SQWE        0x06
- */
- 
 #include <Wire.h>
 #include <prismino.h>
 #include <RTClib.h>
