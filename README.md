@@ -54,9 +54,13 @@ Wiring for the microcontroller:
 Required software libraries:
 
 * [Robopoly’s PRismino](https://github.com/Robopoly/Robopoly_PRismino)
-* [RTClib](https://github.com/adafruit/RTClib)
 * [U8glib](https://github.com/olikraus/u8glib)
-
+* [RTClib](https://github.com/jcw/rtclib)
+  * For the DS3231, one might have to modify the following lines in `RTClib.cpp`:
+    * `#define DS1307_CONTROL_REGISTER 0x0E`
+    * `#define RTC_DS1307__RS0         0x03`
+    * `#define RTC_DS1307__RS1         0x04`
+    * `#define RTC_DS1307__SQWE        0x06`
 
 ## Credits
 This project has been developed by Paul-Edouard Sarlin with the support of Robopoly.
